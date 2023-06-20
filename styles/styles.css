@@ -1,0 +1,105 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  align-self: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 12px;
+}
+
+/* content */
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-content-left {
+  flex-wrap: wrap;
+}
+
+.top-content-left h1 {
+  max-width: 250px;
+  font-weight: 700;
+}
+
+.top-content-right img {
+  height: 250px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h2 {
+  font-weight: 700;
+}
+
+.mid-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-and-text {
+  text-align: center;
+  font-size: 14px;
+}
+
+.image-and-text img {
+  height: 100px;
+}
+
+.middle-second-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 28px;
+}
+
+.quoted-from {
+  text-align: end;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+}
+
+.bottom-right button {
+  padding: 8px 30px;
+}
+
+.footer {
+  text-align: center;
+}
