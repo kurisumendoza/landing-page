@@ -8,8 +8,6 @@ body {
   justify-content: space-between;
 }
 
-/* header */
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -46,10 +44,12 @@ ul {
   padding-top: 50px;
   gap: 50px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .top-content-left {
   flex-wrap: wrap;
+  flex: 1;
 }
 
 .top-content-left button {
@@ -72,9 +72,14 @@ ul {
   max-width: 450px;
 }
 
+.top-content-right {
+  flex: 1;
+}
+
 .top-content-right img {
   width: 100%;
   max-width: 500px;
+  min-width: 375px;
 }
 
 .title {
