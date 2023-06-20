@@ -17,32 +17,64 @@ body {
 
 .logo {
   align-self: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 ul {
   list-style-type: none;
   display: flex;
-  gap: 12px;
+  gap: 15px;
+  font-size: 18px;
 }
 
-/* content */
+.header,
+.top-content {
+  background-color: #49416d;
+  padding: 10px 120px;
+  color: white;
+}
+
+.logo img {
+  height: 50px;
+}
 
 .top-content {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 120px;
+  padding-top: 50px;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
 .top-content-left {
   flex-wrap: wrap;
 }
 
+.top-content-left button {
+  padding: 8px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6a6e81;
+  color: white;
+  font-weight: bold;
+}
+
 .top-content-left h1 {
-  max-width: 250px;
+  max-width: 300px;
   font-weight: 700;
+  font-size: 40px;
+}
+
+.top-content-left p {
+  font-size: 20px;
+  max-width: 450px;
 }
 
 .top-content-right img {
-  height: 250px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .title {
@@ -51,12 +83,15 @@ ul {
 
 .title h2 {
   font-weight: 700;
+  padding: 12px;
 }
 
 .mid-items {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding: 10px 120px;
+  margin-bottom: 120px;
 }
 
 .image-and-text {
@@ -65,7 +100,14 @@ ul {
 }
 
 .image-and-text img {
-  height: 100px;
+  height: 100%;
+  width: 100%;
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: solid;
+  border-color: #8c92ac;
 }
 
 .middle-second-content {
@@ -75,6 +117,9 @@ ul {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #a1cca5;
+  color: white;
+  padding: 30px 120px;
 }
 
 .quote {
@@ -91,15 +136,42 @@ ul {
 
 .bottom-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 200px;
+  gap: 50px;
   align-items: center;
+  background-color: #8c92ac;
+  max-width: 750px;
+  margin: 75px auto;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.bottom-left h3 {
+  font-size: 24px;
+}
+
+.bottom-left p {
+  font-size: 18px;
+}
+
+.bottom-right {
+  padding: 20px 10px;
 }
 
 .bottom-right button {
-  padding: 8px 30px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #494b58;
+  font-weight: bold;
 }
 
 .footer {
   text-align: center;
+  background-color: #49416d;
+  color: white;
+  padding: 5px;
 }
