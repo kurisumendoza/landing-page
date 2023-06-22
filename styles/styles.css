@@ -1,5 +1,6 @@
 body {
   font-family: Roboto, Arial, sans-serif;
+  margin: 0;
 }
 
 .container {
@@ -50,6 +51,7 @@ ul {
 .top-content-left {
   flex-wrap: wrap;
   flex: 1;
+  align-items: center;
 }
 
 .top-content-left button {
@@ -78,8 +80,8 @@ ul {
 
 .top-content-right img {
   width: 100%;
-  max-width: 500px;
-  min-width: 375px;
+  max-width: 1000px;
+  min-width: 250px;
 }
 
 .title {
@@ -97,11 +99,15 @@ ul {
   gap: 20px;
   padding: 10px 120px;
   margin-bottom: 120px;
+  flex-wrap: wrap;
 }
 
 .image-and-text {
   text-align: center;
   font-size: 14px;
+  max-width: 150px;
+  margin-bottom: 50px;
+  flex: 1 1 auto;
 }
 
 .image-and-text img {
@@ -119,9 +125,6 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #a1cca5;
   color: white;
   padding: 30px 120px;
@@ -131,6 +134,9 @@ ul {
   text-align: center;
   font-style: italic;
   font-size: 28px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .quoted-from {
@@ -139,16 +145,18 @@ ul {
   font-size: 20px;
 }
 
+.bottom-container {
+  padding: 10px 50px;
+  margin: 75px auto;
+}
 .bottom-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #8c92ac;
   max-width: 750px;
-  margin: 75px auto;
-  padding: 10px 30px;
+  padding: 20px;
   border-radius: 10px;
   color: white;
 }
@@ -159,6 +167,12 @@ ul {
 
 .bottom-left p {
   font-size: 18px;
+}
+
+.bottom-left h3,
+.bottom-left p {
+  margin: 0;
+  line-height: 50px;
 }
 
 .bottom-right {
@@ -179,4 +193,78 @@ ul {
   background-color: #49416d;
   color: white;
   padding: 5px;
+}
+
+.logo,
+li,
+button,
+.image-and-text img {
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.image-and-text img:hover,
+.bottom-right button:hover {
+  opacity: 0.8;
+}
+
+.image-and-text img:active,
+.bottom-right button:active {
+  opacity: 0.5;
+}
+
+.top-content-left button:hover {
+  background-color: #4e515fdc;
+}
+
+.top-content-left button:active {
+  background-color: #383a44d5;
+}
+
+.logo:hover,
+li:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.logo:active,
+li:active {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 750px) {
+  .header,
+  .top-content {
+    padding: 25px 50px 50px 50px;
+  }
+
+
+  .mid-items {
+    padding: 10px 20px;
+    margin-bottom: 20px
+  }
+
+  .bottom-container {
+    padding: 30px;
+  }
+
+  .middle-second-content {
+    padding: 30px 50px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .top-content-left h1 {
+    font-size: 60px;
+    max-width: 600px;
+  }
+
+  .top-content-left p {
+    font-size: 30px;
+    max-width: 700px;
+  }
+
+  .top-content-left button {
+    font-size: 20px;
+  }
+
 }
